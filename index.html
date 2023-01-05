@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Js (практика)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Практика</h1>
+    <div id="if_else" >        
+        <h3>If else</h3>
+        <!-- Завдання 1 -->
+        <div class="if_else_1">   
+            <input type="text" v-model="number" placeholder="Введіть номер квартири">
+            <button v-on:click="entrance" class="btn">Завдання 1</button>
+        </div> 
+
+        <!-- Завдання 2 -->
+        <div class="if_else_2">
+            <input type="text" v-model="login" placeholder="Введіть логін">
+            <input type="text" v-model="password" placeholder="Введіть пароль">
+            <button v-on:click="authorization" class="btn">Завдання 2</button>
+        </div>
+
+        <!-- Завдання 3 -->
+        <div class="if_else_3">
+           <input type="text" v-model="age" placeholder="Введіть рік народження">
+           <button v-on:click="check_age" class="btn">Завдання 3</button>
+        </div>
+
+        <!-- Завдання 4 -->
+        <div class="if_else_4">
+            <input type="text" v-model="experience" placeholder="Введіть стаж роботи">
+            <button v-on:click="allowance" class="btn">Завдання 4</button>
+        </div>
+    </div>
+    
+    <div id="cycles">    
+        <h3>Cycles</h3>  
+        <!-- Завдання 1 -->
+        <button class="cycle_1 btn" >Завдання 1</button>
+
+        <!-- Завдання 2 -->
+        <button class="cycle_2 btn">Завдання 2</button>
+
+        <!-- Завдання 3 -->
+        <button class="cycle_3 btn">Завдання 3</button>
+
+        <!-- Завдання 4 -->
+        <button class="cycle_4 btn">Завдання 4</button>
+
+        <!-- Завдання 5 -->
+        <button class="cycle_5 btn">Завдання 5</button>
+
+        <!-- Завдання 6 -->
+        <div class="cycle_6">   
+            <textarea v-model="multiplication_on_five" cols="10" rows="10"></textarea>
+            <button v-on:click="multiplication" class="btn">Завдання 6</button>
+        </div>  
+    </div> 
+    
+    <div id="function">
+        <h3>Function</h3> 
+        <!-- Завдання 1 -->
+        <div class="function_1">
+            <div class="picture">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+            </div>  
+        </div>
+
+        <!-- Завдання 2 -->
+        <div class="function_2">
+            <p>Бабочка — символ души, бессмертия, возрождения и воскресения, способности к перевоплощению, ведь это крылатое небесное существо появляется на свет, превращаясь из гусеницы. 
+                Считается, что самое заветное желание сбудется, если подержать бабочку в руке и отпустить ее на волю, к небесам.</p>
+             <p>Бабочка — символ души, бессмертия, возрождения и воскресения, способности к перевоплощению, ведь это крылатое небесное существо появляется на свет, превращаясь из гусеницы. 
+                Считается, что самое заветное желание сбудется, если подержать бабочку в руке и отпустить ее на волю, к небесам.</p>
+            <p>Бабочка — символ души, бессмертия, возрождения и воскресения, способности к перевоплощению, ведь это крылатое небесное существо появляется на свет, превращаясь из гусеницы. 
+                Считается, что самое заветное желание сбудется, если подержать бабочку в руке и отпустить ее на волю, к небесам.</p>
+            <p>Бабочка — символ души, бессмертия, возрождения и воскресения, способности к перевоплощению, ведь это крылатое небесное существо появляется на свет, превращаясь из гусеницы. 
+                Считается, что самое заветное желание сбудется, если подержать бабочку в руке и отпустить ее на волю, к небесам.</p>
+        </div>
+
+        <!-- Завдання 5 -->
+        <div class="function_5">
+            <input type="text" v-model="param_number" placeholder="Введіть число">
+            <input type="text" v-model="param_pow" placeholder="Введіть степінь">
+            <button v-on:click="number_pow" class="btn">Завдання 5</button>  
+        </div>
+
+        <!-- Завдання 7 -->
+        <div class="function_7">
+            <input type="text" v-model="age_user" placeholder="Введіть вік користувача">
+            <button v-on:click="check_age_user" class="btn">Завдання 7</button>
+        </div>
+
+        <!-- Завдання 11 -->
+        <div class="function_11">
+            <input type="text" v-model="random_number" placeholder="Введіть число від 0 до 10">
+            <button v-on:click="guess_number" class="btn">Завдання 11</button>
+        </div>
+    </div>
+
+    <div id="line_task">
+        <h3>Line</h3>
+        <!-- Завдання 1 -->
+        <div class="line_1">
+            <input type="text" v-model="line_len" placeholder="Введіть рядок">
+            <button v-on:click="line_length" class="btn">Завдання 1</button>
+        </div>
+
+        <!-- Завдання 2 -->
+        <div class="line_2">
+            <div  class="picture">
+                <div v-for="image in img" >
+                    <img :src="image.link" :alt="image.name">
+                </div>            
+            </div> 
+        </div>
+
+        <!-- Завдання 3 -->
+        <div class="line_3">
+            <input type="text" v-model="name_domen" placeholder="Введіть URL">
+            <button v-on:click="URL" class="btn">Завдання 3</button>
+        </div>
+
+        <!-- Завдання 4 -->
+        <div class="line_4">
+            <form action="" method="get" class="line_form">
+                <hr>
+                <h4>Surname</h4>
+                <input type="text" v-model="accountNew.surname" placeholder="Введіть прізвище">
+                
+                <h4>Name</h4>
+                <input type="text" v-model="accountNew.name" placeholder="Введіть ім я">
+                
+                <h4>Password</h4> 
+                <input type="password" v-model="accountNew.password" placeholder="Введіть пароль">
+                
+                <h4>Email</h4>
+                <input type="email" v-model="accountNew.email" placeholder="Введіть пошту">
+                
+                <button v-on:click="create_new_account" class="btn">Відправити</button>
+                <hr>
+            </form>
+        </div>
+    </div>
+
+    <div id="local_storage">
+        <h3>Local Storage</h3>
+        <!-- Завдання 2 -->
+        <button class="local_2 btn">Завдання 2</button>
+
+        <!-- Завдання 4 -->
+        <button class="local_4 btn">Завдання 4</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

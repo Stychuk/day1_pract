@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(116, 181, 255);
+}
+h1{
+    text-align: center;
+}
+.btn{
+    background-color: yellow;
+    padding: 5px 5px;
+    margin-top: 5px;
+}
+#if_else{
+    margin: 20px 30px;
+    line-height: 35px;
+}
+#cycles{
+    margin: 20px 30px;
+    line-height: 30px;       
+}
+#function{
+    margin: 20px 30px;
+    line-height: 25px;
+}
+.picture{
+    display: flex;   
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+#line_task{
+    margin: 20px 30px;
+    line-height: 25px;
+}
+.line_form{
+    line-height: 0px;
+    padding-top: 25px;
+    margin: 0 39% ;
+}
+#local_storage{
+    margin: 20px 30px;
+}
